@@ -1,0 +1,21 @@
+<style>
+    body {
+        background-color: aliceblue;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 7%;
+        align-items: center;
+    }
+    div>span{
+        font-weight: bold;
+    }
+</style>
+<h1>GST</h1>
+<div><span>List Of GST</span><textarea id="input"></textarea></div>
+<div class="row"><span>Start Date</span><input id="dt" type="date" value="2020-01-01" min="2017-01-01"></input></div>
+<div class="row"><span>End Date</span><input id="dtend" type="date" value="2020-01-01" min="2017-01-01"></input></div>
+<div class="row"><button id="submit">Submit</button></div>
+<script src="popup.js" type="module" defer></script>

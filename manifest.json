@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "GST Mishra",
+    "version": "1.1",
+    "description": "Simple extention for my friend",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": 
+    [
+        {
+            "matches":["https://mis.ewaybillgst.gov.in/analytics/N_Indivisual/GSTINBasedRpt.aspx*"],
+            "js":["a.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [ "activeTab","scripting","storage","unlimitedStorage" ]
+  }
